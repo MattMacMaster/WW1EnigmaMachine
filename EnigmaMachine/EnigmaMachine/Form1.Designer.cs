@@ -46,7 +46,7 @@
             this.radioButton13 = new System.Windows.Forms.RadioButton();
             this.radioButton14 = new System.Windows.Forms.RadioButton();
             this.radioButton15 = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
+            this.Clear = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
@@ -188,7 +188,6 @@
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(60, 17);
             this.radioButton2.TabIndex = 3;
-            this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Rotor 2";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
@@ -199,7 +198,6 @@
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(60, 17);
             this.radioButton3.TabIndex = 4;
-            this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Rotor 3";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
@@ -210,7 +208,6 @@
             this.radioButton4.Name = "radioButton4";
             this.radioButton4.Size = new System.Drawing.Size(60, 17);
             this.radioButton4.TabIndex = 5;
-            this.radioButton4.TabStop = true;
             this.radioButton4.Text = "Rotor 4";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
@@ -221,7 +218,6 @@
             this.radioButton5.Name = "radioButton5";
             this.radioButton5.Size = new System.Drawing.Size(60, 17);
             this.radioButton5.TabIndex = 6;
-            this.radioButton5.TabStop = true;
             this.radioButton5.Text = "Rotor 5";
             this.radioButton5.UseVisualStyleBackColor = true;
             // 
@@ -232,7 +228,6 @@
             this.radioButton6.Name = "radioButton6";
             this.radioButton6.Size = new System.Drawing.Size(60, 17);
             this.radioButton6.TabIndex = 11;
-            this.radioButton6.TabStop = true;
             this.radioButton6.Text = "Rotor 5";
             this.radioButton6.UseVisualStyleBackColor = true;
             // 
@@ -243,7 +238,6 @@
             this.radioButton7.Name = "radioButton7";
             this.radioButton7.Size = new System.Drawing.Size(60, 17);
             this.radioButton7.TabIndex = 8;
-            this.radioButton7.TabStop = true;
             this.radioButton7.Text = "Rotor 2";
             this.radioButton7.UseVisualStyleBackColor = true;
             // 
@@ -254,7 +248,6 @@
             this.radioButton8.Name = "radioButton8";
             this.radioButton8.Size = new System.Drawing.Size(60, 17);
             this.radioButton8.TabIndex = 10;
-            this.radioButton8.TabStop = true;
             this.radioButton8.Text = "Rotor 4";
             this.radioButton8.UseVisualStyleBackColor = true;
             // 
@@ -265,7 +258,6 @@
             this.radioButton9.Name = "radioButton9";
             this.radioButton9.Size = new System.Drawing.Size(60, 17);
             this.radioButton9.TabIndex = 7;
-            this.radioButton9.TabStop = true;
             this.radioButton9.Text = "Rotor 1";
             this.radioButton9.UseVisualStyleBackColor = true;
             // 
@@ -300,7 +292,6 @@
             this.radioButton12.Name = "radioButton12";
             this.radioButton12.Size = new System.Drawing.Size(60, 17);
             this.radioButton12.TabIndex = 8;
-            this.radioButton12.TabStop = true;
             this.radioButton12.Text = "Rotor 2";
             this.radioButton12.UseVisualStyleBackColor = true;
             // 
@@ -311,7 +302,6 @@
             this.radioButton13.Name = "radioButton13";
             this.radioButton13.Size = new System.Drawing.Size(60, 17);
             this.radioButton13.TabIndex = 10;
-            this.radioButton13.TabStop = true;
             this.radioButton13.Text = "Rotor 4";
             this.radioButton13.UseVisualStyleBackColor = true;
             // 
@@ -322,7 +312,6 @@
             this.radioButton14.Name = "radioButton14";
             this.radioButton14.Size = new System.Drawing.Size(60, 17);
             this.radioButton14.TabIndex = 7;
-            this.radioButton14.TabStop = true;
             this.radioButton14.Text = "Rotor 1";
             this.radioButton14.UseVisualStyleBackColor = true;
             // 
@@ -333,18 +322,18 @@
             this.radioButton15.Name = "radioButton15";
             this.radioButton15.Size = new System.Drawing.Size(60, 17);
             this.radioButton15.TabIndex = 9;
-            this.radioButton15.TabStop = true;
             this.radioButton15.Text = "Rotor 3";
             this.radioButton15.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // Clear
             // 
-            this.button1.Location = new System.Drawing.Point(307, 386);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Clear";
-            this.button1.UseVisualStyleBackColor = true;
+            this.Clear.Location = new System.Drawing.Point(307, 386);
+            this.Clear.Name = "Clear";
+            this.Clear.Size = new System.Drawing.Size(75, 23);
+            this.Clear.TabIndex = 2;
+            this.Clear.Text = "Clear";
+            this.Clear.UseVisualStyleBackColor = true;
+            this.Clear.Click += new System.EventHandler(this.Clear_Click);
             // 
             // button2
             // 
@@ -434,6 +423,7 @@
             this.LeftAdd.TabIndex = 12;
             this.LeftAdd.Text = "+";
             this.LeftAdd.UseVisualStyleBackColor = true;
+            this.LeftAdd.Click += new System.EventHandler(this.LeftAdd_Click);
             // 
             // LeftMin
             // 
@@ -444,6 +434,7 @@
             this.LeftMin.TabIndex = 13;
             this.LeftMin.Text = "-";
             this.LeftMin.UseVisualStyleBackColor = true;
+            this.LeftMin.Click += new System.EventHandler(this.LeftMin_Click);
             // 
             // LeftNotch
             // 
@@ -470,6 +461,7 @@
             this.CenterMin.TabIndex = 18;
             this.CenterMin.Text = "-";
             this.CenterMin.UseVisualStyleBackColor = true;
+            this.CenterMin.Click += new System.EventHandler(this.CenterMin_Click);
             // 
             // CenterAdd
             // 
@@ -480,6 +472,7 @@
             this.CenterAdd.TabIndex = 17;
             this.CenterAdd.Text = "+";
             this.CenterAdd.UseVisualStyleBackColor = true;
+            this.CenterAdd.Click += new System.EventHandler(this.CenterAdd_Click);
             // 
             // label6
             // 
@@ -516,6 +509,7 @@
             this.RightMin.TabIndex = 23;
             this.RightMin.Text = "-";
             this.RightMin.UseVisualStyleBackColor = true;
+            this.RightMin.Click += new System.EventHandler(this.RightMin_Click);
             // 
             // RightAdd
             // 
@@ -526,6 +520,7 @@
             this.RightAdd.TabIndex = 22;
             this.RightAdd.Text = "+";
             this.RightAdd.UseVisualStyleBackColor = true;
+            this.RightAdd.Click += new System.EventHandler(this.RightAdd_Click);
             // 
             // label8
             // 
@@ -1050,7 +1045,7 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.Clear);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -1088,7 +1083,7 @@
         private System.Windows.Forms.RadioButton radioButton15;
         private System.Windows.Forms.RadioButton radioButton13;
         private System.Windows.Forms.RadioButton radioButton14;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button Clear;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button3;
