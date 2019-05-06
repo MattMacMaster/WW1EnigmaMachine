@@ -102,5 +102,12 @@ namespace EnigmaMachine
             RightNotch.Text = Convert.ToString(RightNotchVal);
             //End Notch Clearing
         }
+
+        private void Scramble_Click(object sender, EventArgs e)
+        {
+            //CALLS ALL PROCESSUS WITH ACCORDING CONFIGURATIONS
+
+
+        }
     }
 }
