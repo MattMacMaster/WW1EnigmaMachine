@@ -102,6 +102,12 @@ namespace EnigmaMachine
             RightNotch.Text = Convert.ToString(RightNotchVal);
             //End Notch Clearing
         }
+        private string PlugBoard(String Input)
+        {
+
+
+
+        }
 
         private void Scramble_Click(object sender, EventArgs e)
         {
