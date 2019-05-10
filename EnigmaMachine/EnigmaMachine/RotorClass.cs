@@ -17,14 +17,15 @@ namespace EnigmaMachine
             OutputArray = OutArray;
         }
 
-
+        //Takes in value from plugboard and then runs through dual array
+        //Should work both ways
         public String InwardVal(String Input)
         {
             int i = 0;
             int match = 0;
-            foreach (String m in InputArray)
+            foreach (String Char in InputArray)
             {
-                if (m == InputArray[i])
+                if (Input == InputArray[i])
                 {
                     match = i;
                 }
@@ -35,7 +36,14 @@ namespace EnigmaMachine
             return OutputArray[match].ToString();
 
         }
-
-
+        //for testing rotors
+        public int RotorLength()
+        {
+            return this.InputArray.Length;
+        }
+        public String RotorLet (int a)
+        {
+            return InputArray[a] + "," + OutputArray[a];
+        }
     }
 }

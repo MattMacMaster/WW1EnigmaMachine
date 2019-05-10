@@ -16,6 +16,35 @@ namespace EnigmaMachine
         int LeftNotchVal = 0;
         int CenterNotchVal = 0;
         int RightNotchVal = 0;
+        // Rotar Decalrations
+        //Rotor 1 is base default
+        // new String[] Set1In = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
+        //String[] Set1Out = { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" };
+
+            //LIMIT IS INDEX 25
+
+        RotorClass Rotor1 = new RotorClass(
+            new String[] {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"},
+           new String[] { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" });
+
+        RotorClass Rotor2 = new RotorClass(
+            new String[] { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" },
+            new String[] { "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "A" });
+
+        RotorClass Rotor3 = new RotorClass(
+            new String[] { "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z" },
+            new String[] { "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O" });
+        //Enhanced encryption here
+        RotorClass Rotor4 = new RotorClass(
+            new String[] { "T", "U", "V", "W", "X", "Y", "Z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S" },
+            new String[] { "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "A", "B", "C", "D", "E", "F" });
+
+        RotorClass Rotor5 = new RotorClass(
+            new String[] { "S", "T", "U", "V", "P", "Q", "R", "W", "X", "Y", "Z", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O" },
+            new String[] { "W", "X", "Y", "Z", "A", "B", "C", "D", "S", "T", "U", "V", "P", "Q", "R", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O" }
+            );
+
+
         public Form1()
         {
             InitializeComponent();
@@ -213,17 +242,110 @@ namespace EnigmaMachine
                 return Input.ToUpper();
             }
         }
-        //Rotor Creation
+        //Rotor Orientation
+        private int[] Orientation()
+        {
+            int[] DecisionLayer = new int[3];
+            //Right Decision
+            int a = 0;
+            if(Right1.Checked == true)
+            {
+                a = 1;
+            }
+          else  if (Right2.Checked == true)
+            {
+                a = 2;
+            }
+           else if (Right3.Checked == true)
+            {
+                a = 3;
+            }
+           else if (Right4.Checked == true)
+            {
+                a = 4;
+            }
+           else if (Right5.Checked == true)
+            {
+                a = 5;
+            }
+            DecisionLayer[0] = a;
+            //center Decision
+            int b = 0;
+            if (center1.Checked == true)
+            {
+                b = 1;
+            }
+            else if (center2.Checked == true)
+            {
+                b = 2;
+            }
+            else if (center3.Checked == true)
+            {
+                b = 3;
+            }
+            else if (center4.Checked == true)
+            {
+                b = 4;
+            }
+            else if (center5.Checked == true)
+            {
+                b = 5;
+            }
+            DecisionLayer[1] = b;
 
 
+            //Left Decision
+            int c = 0;
+            if (left1.Checked == true)
+            {
+                c = 1;
+            }
+            else if (left2.Checked == true)
+            {
+                c = 2;
+            }
+            else if (left3.Checked == true)
+            {
+                c = 3;
+            }
+            else if (left4.Checked == true)
+            {
+                c = 4;
+            }
+            else if (left5.Checked == true)
+            {
+                c = 5;
+            }
+            DecisionLayer[2] = c;
+
+            //returns int array into for a switch statement
+            return DecisionLayer;
+
+        }/*
+        private String outputLayer(int[] Orient,string input)
+        {
+
+
+
+
+            return 
+        }
+        */
 
 
 
         private void Scramble_Click(object sender, EventArgs e)
         {
             //CALLS ALL PROCESSUS WITH ACCORDING CONFIGURATIONS
-          string PlugOutput = PlugBoard(Input.Text);
-            Output.Text = PlugOutput;
+            int[] test;
+
+            //outputLayer(Orientation(), PlugBoard(Input.Text));
+            test = Orientation();
+            Output.Text = test[0].ToString()+ test[1].ToString()+ test[2].ToString();
+            //ROTOR TEST: Output.Text = Rotor3.InwardVal(Rotor2.InwardVal(Rotor3.InwardVal(PlugOutput))); 
+
+
+
         }
     }
 }

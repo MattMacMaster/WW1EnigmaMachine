@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.left5 = new System.Windows.Forms.RadioButton();
+            this.left2 = new System.Windows.Forms.RadioButton();
+            this.left4 = new System.Windows.Forms.RadioButton();
+            this.left1 = new System.Windows.Forms.RadioButton();
+            this.left3 = new System.Windows.Forms.RadioButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton10 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.radioButton9 = new System.Windows.Forms.RadioButton();
-            this.radioButton8 = new System.Windows.Forms.RadioButton();
+            this.center5 = new System.Windows.Forms.RadioButton();
+            this.center3 = new System.Windows.Forms.RadioButton();
+            this.center2 = new System.Windows.Forms.RadioButton();
+            this.center1 = new System.Windows.Forms.RadioButton();
+            this.center4 = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.radioButton11 = new System.Windows.Forms.RadioButton();
-            this.radioButton12 = new System.Windows.Forms.RadioButton();
-            this.radioButton15 = new System.Windows.Forms.RadioButton();
-            this.radioButton13 = new System.Windows.Forms.RadioButton();
-            this.radioButton14 = new System.Windows.Forms.RadioButton();
+            this.Right5 = new System.Windows.Forms.RadioButton();
+            this.Right2 = new System.Windows.Forms.RadioButton();
+            this.Right3 = new System.Windows.Forms.RadioButton();
+            this.Right4 = new System.Windows.Forms.RadioButton();
+            this.Right1 = new System.Windows.Forms.RadioButton();
             this.Clear = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -129,11 +129,11 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.radioButton5);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton4);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.radioButton3);
+            this.groupBox1.Controls.Add(this.left5);
+            this.groupBox1.Controls.Add(this.left2);
+            this.groupBox1.Controls.Add(this.left4);
+            this.groupBox1.Controls.Add(this.left1);
+            this.groupBox1.Controls.Add(this.left3);
             this.groupBox1.Location = new System.Drawing.Point(13, 13);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(119, 142);
@@ -141,65 +141,65 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Left Rotor";
             // 
-            // radioButton5
+            // left5
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(18, 115);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(60, 17);
-            this.radioButton5.TabIndex = 6;
-            this.radioButton5.Text = "Rotor 5";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.left5.AutoSize = true;
+            this.left5.Location = new System.Drawing.Point(18, 115);
+            this.left5.Name = "left5";
+            this.left5.Size = new System.Drawing.Size(60, 17);
+            this.left5.TabIndex = 6;
+            this.left5.Text = "Rotor 5";
+            this.left5.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // left2
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(18, 43);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(60, 17);
-            this.radioButton2.TabIndex = 3;
-            this.radioButton2.Text = "Rotor 2";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.left2.AutoSize = true;
+            this.left2.Location = new System.Drawing.Point(18, 43);
+            this.left2.Name = "left2";
+            this.left2.Size = new System.Drawing.Size(60, 17);
+            this.left2.TabIndex = 3;
+            this.left2.Text = "Rotor 2";
+            this.left2.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // left4
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(18, 91);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(60, 17);
-            this.radioButton4.TabIndex = 5;
-            this.radioButton4.Text = "Rotor 4";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.left4.AutoSize = true;
+            this.left4.Location = new System.Drawing.Point(18, 91);
+            this.left4.Name = "left4";
+            this.left4.Size = new System.Drawing.Size(60, 17);
+            this.left4.TabIndex = 5;
+            this.left4.Text = "Rotor 4";
+            this.left4.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // left1
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(18, 19);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(60, 17);
-            this.radioButton1.TabIndex = 2;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Rotor 1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.left1.AutoSize = true;
+            this.left1.Checked = true;
+            this.left1.Location = new System.Drawing.Point(18, 19);
+            this.left1.Name = "left1";
+            this.left1.Size = new System.Drawing.Size(60, 17);
+            this.left1.TabIndex = 2;
+            this.left1.TabStop = true;
+            this.left1.Text = "Rotor 1";
+            this.left1.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // left3
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(18, 67);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(60, 17);
-            this.radioButton3.TabIndex = 4;
-            this.radioButton3.Text = "Rotor 3";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.left3.AutoSize = true;
+            this.left3.Location = new System.Drawing.Point(18, 67);
+            this.left3.Name = "left3";
+            this.left3.Size = new System.Drawing.Size(60, 17);
+            this.left3.TabIndex = 4;
+            this.left3.Text = "Rotor 3";
+            this.left3.UseVisualStyleBackColor = true;
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.radioButton6);
-            this.groupBox2.Controls.Add(this.radioButton10);
-            this.groupBox2.Controls.Add(this.radioButton7);
-            this.groupBox2.Controls.Add(this.radioButton9);
-            this.groupBox2.Controls.Add(this.radioButton8);
+            this.groupBox2.Controls.Add(this.center5);
+            this.groupBox2.Controls.Add(this.center3);
+            this.groupBox2.Controls.Add(this.center2);
+            this.groupBox2.Controls.Add(this.center1);
+            this.groupBox2.Controls.Add(this.center4);
             this.groupBox2.Location = new System.Drawing.Point(138, 13);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(119, 142);
@@ -207,65 +207,65 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Center Rotor";
             // 
-            // radioButton6
+            // center5
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(20, 115);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(60, 17);
-            this.radioButton6.TabIndex = 11;
-            this.radioButton6.Text = "Rotor 5";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.center5.AutoSize = true;
+            this.center5.Location = new System.Drawing.Point(20, 115);
+            this.center5.Name = "center5";
+            this.center5.Size = new System.Drawing.Size(60, 17);
+            this.center5.TabIndex = 11;
+            this.center5.Text = "Rotor 5";
+            this.center5.UseVisualStyleBackColor = true;
             // 
-            // radioButton10
+            // center3
             // 
-            this.radioButton10.AutoSize = true;
-            this.radioButton10.Checked = true;
-            this.radioButton10.Location = new System.Drawing.Point(20, 67);
-            this.radioButton10.Name = "radioButton10";
-            this.radioButton10.Size = new System.Drawing.Size(60, 17);
-            this.radioButton10.TabIndex = 9;
-            this.radioButton10.TabStop = true;
-            this.radioButton10.Text = "Rotor 3";
-            this.radioButton10.UseVisualStyleBackColor = true;
+            this.center3.AutoSize = true;
+            this.center3.Checked = true;
+            this.center3.Location = new System.Drawing.Point(20, 67);
+            this.center3.Name = "center3";
+            this.center3.Size = new System.Drawing.Size(60, 17);
+            this.center3.TabIndex = 9;
+            this.center3.TabStop = true;
+            this.center3.Text = "Rotor 3";
+            this.center3.UseVisualStyleBackColor = true;
             // 
-            // radioButton7
+            // center2
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(20, 43);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(60, 17);
-            this.radioButton7.TabIndex = 8;
-            this.radioButton7.Text = "Rotor 2";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.center2.AutoSize = true;
+            this.center2.Location = new System.Drawing.Point(20, 43);
+            this.center2.Name = "center2";
+            this.center2.Size = new System.Drawing.Size(60, 17);
+            this.center2.TabIndex = 8;
+            this.center2.Text = "Rotor 2";
+            this.center2.UseVisualStyleBackColor = true;
             // 
-            // radioButton9
+            // center1
             // 
-            this.radioButton9.AutoSize = true;
-            this.radioButton9.Location = new System.Drawing.Point(20, 19);
-            this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(60, 17);
-            this.radioButton9.TabIndex = 7;
-            this.radioButton9.Text = "Rotor 1";
-            this.radioButton9.UseVisualStyleBackColor = true;
+            this.center1.AutoSize = true;
+            this.center1.Location = new System.Drawing.Point(20, 19);
+            this.center1.Name = "center1";
+            this.center1.Size = new System.Drawing.Size(60, 17);
+            this.center1.TabIndex = 7;
+            this.center1.Text = "Rotor 1";
+            this.center1.UseVisualStyleBackColor = true;
             // 
-            // radioButton8
+            // center4
             // 
-            this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(20, 91);
-            this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(60, 17);
-            this.radioButton8.TabIndex = 10;
-            this.radioButton8.Text = "Rotor 4";
-            this.radioButton8.UseVisualStyleBackColor = true;
+            this.center4.AutoSize = true;
+            this.center4.Location = new System.Drawing.Point(20, 91);
+            this.center4.Name = "center4";
+            this.center4.Size = new System.Drawing.Size(60, 17);
+            this.center4.TabIndex = 10;
+            this.center4.Text = "Rotor 4";
+            this.center4.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.radioButton11);
-            this.groupBox3.Controls.Add(this.radioButton12);
-            this.groupBox3.Controls.Add(this.radioButton15);
-            this.groupBox3.Controls.Add(this.radioButton13);
-            this.groupBox3.Controls.Add(this.radioButton14);
+            this.groupBox3.Controls.Add(this.Right5);
+            this.groupBox3.Controls.Add(this.Right2);
+            this.groupBox3.Controls.Add(this.Right3);
+            this.groupBox3.Controls.Add(this.Right4);
+            this.groupBox3.Controls.Add(this.Right1);
             this.groupBox3.Location = new System.Drawing.Point(263, 13);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(119, 142);
@@ -273,57 +273,57 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Right Rotor";
             // 
-            // radioButton11
+            // Right5
             // 
-            this.radioButton11.AutoSize = true;
-            this.radioButton11.Checked = true;
-            this.radioButton11.Location = new System.Drawing.Point(14, 115);
-            this.radioButton11.Name = "radioButton11";
-            this.radioButton11.Size = new System.Drawing.Size(60, 17);
-            this.radioButton11.TabIndex = 11;
-            this.radioButton11.TabStop = true;
-            this.radioButton11.Text = "Rotor 5";
-            this.radioButton11.UseVisualStyleBackColor = true;
+            this.Right5.AutoSize = true;
+            this.Right5.Checked = true;
+            this.Right5.Location = new System.Drawing.Point(14, 115);
+            this.Right5.Name = "Right5";
+            this.Right5.Size = new System.Drawing.Size(60, 17);
+            this.Right5.TabIndex = 11;
+            this.Right5.TabStop = true;
+            this.Right5.Text = "Rotor 5";
+            this.Right5.UseVisualStyleBackColor = true;
             // 
-            // radioButton12
+            // Right2
             // 
-            this.radioButton12.AutoSize = true;
-            this.radioButton12.Location = new System.Drawing.Point(14, 43);
-            this.radioButton12.Name = "radioButton12";
-            this.radioButton12.Size = new System.Drawing.Size(60, 17);
-            this.radioButton12.TabIndex = 8;
-            this.radioButton12.Text = "Rotor 2";
-            this.radioButton12.UseVisualStyleBackColor = true;
+            this.Right2.AutoSize = true;
+            this.Right2.Location = new System.Drawing.Point(14, 43);
+            this.Right2.Name = "Right2";
+            this.Right2.Size = new System.Drawing.Size(60, 17);
+            this.Right2.TabIndex = 8;
+            this.Right2.Text = "Rotor 2";
+            this.Right2.UseVisualStyleBackColor = true;
             // 
-            // radioButton15
+            // Right3
             // 
-            this.radioButton15.AutoSize = true;
-            this.radioButton15.Location = new System.Drawing.Point(14, 67);
-            this.radioButton15.Name = "radioButton15";
-            this.radioButton15.Size = new System.Drawing.Size(60, 17);
-            this.radioButton15.TabIndex = 9;
-            this.radioButton15.Text = "Rotor 3";
-            this.radioButton15.UseVisualStyleBackColor = true;
+            this.Right3.AutoSize = true;
+            this.Right3.Location = new System.Drawing.Point(14, 67);
+            this.Right3.Name = "Right3";
+            this.Right3.Size = new System.Drawing.Size(60, 17);
+            this.Right3.TabIndex = 9;
+            this.Right3.Text = "Rotor 3";
+            this.Right3.UseVisualStyleBackColor = true;
             // 
-            // radioButton13
+            // Right4
             // 
-            this.radioButton13.AutoSize = true;
-            this.radioButton13.Location = new System.Drawing.Point(14, 91);
-            this.radioButton13.Name = "radioButton13";
-            this.radioButton13.Size = new System.Drawing.Size(60, 17);
-            this.radioButton13.TabIndex = 10;
-            this.radioButton13.Text = "Rotor 4";
-            this.radioButton13.UseVisualStyleBackColor = true;
+            this.Right4.AutoSize = true;
+            this.Right4.Location = new System.Drawing.Point(14, 91);
+            this.Right4.Name = "Right4";
+            this.Right4.Size = new System.Drawing.Size(60, 17);
+            this.Right4.TabIndex = 10;
+            this.Right4.Text = "Rotor 4";
+            this.Right4.UseVisualStyleBackColor = true;
             // 
-            // radioButton14
+            // Right1
             // 
-            this.radioButton14.AutoSize = true;
-            this.radioButton14.Location = new System.Drawing.Point(14, 19);
-            this.radioButton14.Name = "radioButton14";
-            this.radioButton14.Size = new System.Drawing.Size(60, 17);
-            this.radioButton14.TabIndex = 7;
-            this.radioButton14.Text = "Rotor 1";
-            this.radioButton14.UseVisualStyleBackColor = true;
+            this.Right1.AutoSize = true;
+            this.Right1.Location = new System.Drawing.Point(14, 19);
+            this.Right1.Name = "Right1";
+            this.Right1.Size = new System.Drawing.Size(60, 17);
+            this.Right1.TabIndex = 7;
+            this.Right1.Text = "Rotor 1";
+            this.Right1.UseVisualStyleBackColor = true;
             // 
             // Clear
             // 
@@ -1067,23 +1067,23 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton left5;
+        private System.Windows.Forms.RadioButton left2;
+        private System.Windows.Forms.RadioButton left4;
+        private System.Windows.Forms.RadioButton left1;
+        private System.Windows.Forms.RadioButton left3;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton10;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton9;
-        private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.RadioButton center5;
+        private System.Windows.Forms.RadioButton center3;
+        private System.Windows.Forms.RadioButton center2;
+        private System.Windows.Forms.RadioButton center1;
+        private System.Windows.Forms.RadioButton center4;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.RadioButton radioButton11;
-        private System.Windows.Forms.RadioButton radioButton12;
-        private System.Windows.Forms.RadioButton radioButton15;
-        private System.Windows.Forms.RadioButton radioButton13;
-        private System.Windows.Forms.RadioButton radioButton14;
+        private System.Windows.Forms.RadioButton Right5;
+        private System.Windows.Forms.RadioButton Right2;
+        private System.Windows.Forms.RadioButton Right3;
+        private System.Windows.Forms.RadioButton Right4;
+        private System.Windows.Forms.RadioButton Right1;
         private System.Windows.Forms.Button Clear;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label1;
