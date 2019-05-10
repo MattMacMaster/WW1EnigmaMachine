@@ -210,9 +210,14 @@ namespace EnigmaMachine
             }
             else
             {
-                return Input;
+                return Input.ToUpper();
             }
         }
+        //Rotor Creation
+
+
+
+
 
         private void Scramble_Click(object sender, EventArgs e)
         {
