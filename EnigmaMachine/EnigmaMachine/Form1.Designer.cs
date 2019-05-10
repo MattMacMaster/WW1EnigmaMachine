@@ -111,16 +111,16 @@
             this.PlugO = new System.Windows.Forms.TextBox();
             this.PlugN = new System.Windows.Forms.TextBox();
             this.PlugM = new System.Windows.Forms.TextBox();
-            this.PlusT = new System.Windows.Forms.TextBox();
+            this.PlugT = new System.Windows.Forms.TextBox();
             this.PlugS = new System.Windows.Forms.TextBox();
             this.PlugR = new System.Windows.Forms.TextBox();
             this.PlugQ = new System.Windows.Forms.TextBox();
-            this.PlusX = new System.Windows.Forms.TextBox();
-            this.PlusW = new System.Windows.Forms.TextBox();
-            this.PlusV = new System.Windows.Forms.TextBox();
+            this.PlugX = new System.Windows.Forms.TextBox();
+            this.PlugW = new System.Windows.Forms.TextBox();
+            this.PlugV = new System.Windows.Forms.TextBox();
             this.PlugU = new System.Windows.Forms.TextBox();
-            this.PlusZ = new System.Windows.Forms.TextBox();
-            this.PlusY = new System.Windows.Forms.TextBox();
+            this.PlugZ = new System.Windows.Forms.TextBox();
+            this.PlugY = new System.Windows.Forms.TextBox();
             this.Scramble = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -886,12 +886,12 @@
             this.PlugM.Size = new System.Drawing.Size(22, 20);
             this.PlugM.TabIndex = 64;
             // 
-            // PlusT
+            // PlugT
             // 
-            this.PlusT.Location = new System.Drawing.Point(252, 331);
-            this.PlusT.Name = "PlusT";
-            this.PlusT.Size = new System.Drawing.Size(22, 20);
-            this.PlusT.TabIndex = 71;
+            this.PlugT.Location = new System.Drawing.Point(252, 331);
+            this.PlugT.Name = "PlugT";
+            this.PlugT.Size = new System.Drawing.Size(22, 20);
+            this.PlugT.TabIndex = 71;
             // 
             // PlugS
             // 
@@ -914,26 +914,26 @@
             this.PlugQ.Size = new System.Drawing.Size(22, 20);
             this.PlugQ.TabIndex = 68;
             // 
-            // PlusX
+            // PlugX
             // 
-            this.PlusX.Location = new System.Drawing.Point(305, 331);
-            this.PlusX.Name = "PlusX";
-            this.PlusX.Size = new System.Drawing.Size(22, 20);
-            this.PlusX.TabIndex = 75;
+            this.PlugX.Location = new System.Drawing.Point(305, 331);
+            this.PlugX.Name = "PlugX";
+            this.PlugX.Size = new System.Drawing.Size(22, 20);
+            this.PlugX.TabIndex = 75;
             // 
-            // PlusW
+            // PlugW
             // 
-            this.PlusW.Location = new System.Drawing.Point(305, 305);
-            this.PlusW.Name = "PlusW";
-            this.PlusW.Size = new System.Drawing.Size(22, 20);
-            this.PlusW.TabIndex = 74;
+            this.PlugW.Location = new System.Drawing.Point(305, 305);
+            this.PlugW.Name = "PlugW";
+            this.PlugW.Size = new System.Drawing.Size(22, 20);
+            this.PlugW.TabIndex = 74;
             // 
-            // PlusV
+            // PlugV
             // 
-            this.PlusV.Location = new System.Drawing.Point(305, 282);
-            this.PlusV.Name = "PlusV";
-            this.PlusV.Size = new System.Drawing.Size(22, 20);
-            this.PlusV.TabIndex = 73;
+            this.PlugV.Location = new System.Drawing.Point(305, 282);
+            this.PlugV.Name = "PlugV";
+            this.PlugV.Size = new System.Drawing.Size(22, 20);
+            this.PlugV.TabIndex = 73;
             // 
             // PlugU
             // 
@@ -942,19 +942,19 @@
             this.PlugU.Size = new System.Drawing.Size(22, 20);
             this.PlugU.TabIndex = 72;
             // 
-            // PlusZ
+            // PlugZ
             // 
-            this.PlusZ.Location = new System.Drawing.Point(360, 305);
-            this.PlusZ.Name = "PlusZ";
-            this.PlusZ.Size = new System.Drawing.Size(22, 20);
-            this.PlusZ.TabIndex = 77;
+            this.PlugZ.Location = new System.Drawing.Point(360, 305);
+            this.PlugZ.Name = "PlugZ";
+            this.PlugZ.Size = new System.Drawing.Size(22, 20);
+            this.PlugZ.TabIndex = 77;
             // 
-            // PlusY
+            // PlugY
             // 
-            this.PlusY.Location = new System.Drawing.Point(360, 282);
-            this.PlusY.Name = "PlusY";
-            this.PlusY.Size = new System.Drawing.Size(22, 20);
-            this.PlusY.TabIndex = 76;
+            this.PlugY.Location = new System.Drawing.Point(360, 282);
+            this.PlugY.Name = "PlugY";
+            this.PlugY.Size = new System.Drawing.Size(22, 20);
+            this.PlugY.TabIndex = 76;
             // 
             // Scramble
             // 
@@ -972,13 +972,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(393, 450);
             this.Controls.Add(this.Scramble);
-            this.Controls.Add(this.PlusZ);
-            this.Controls.Add(this.PlusY);
-            this.Controls.Add(this.PlusX);
-            this.Controls.Add(this.PlusW);
-            this.Controls.Add(this.PlusV);
+            this.Controls.Add(this.PlugZ);
+            this.Controls.Add(this.PlugY);
+            this.Controls.Add(this.PlugX);
+            this.Controls.Add(this.PlugW);
+            this.Controls.Add(this.PlugV);
             this.Controls.Add(this.PlugU);
-            this.Controls.Add(this.PlusT);
+            this.Controls.Add(this.PlugT);
             this.Controls.Add(this.PlugS);
             this.Controls.Add(this.PlugR);
             this.Controls.Add(this.PlugQ);
@@ -1149,16 +1149,16 @@
         private System.Windows.Forms.TextBox PlugO;
         private System.Windows.Forms.TextBox PlugN;
         private System.Windows.Forms.TextBox PlugM;
-        private System.Windows.Forms.TextBox PlusT;
+        private System.Windows.Forms.TextBox PlugT;
         private System.Windows.Forms.TextBox PlugS;
         private System.Windows.Forms.TextBox PlugR;
         private System.Windows.Forms.TextBox PlugQ;
-        private System.Windows.Forms.TextBox PlusX;
-        private System.Windows.Forms.TextBox PlusW;
-        private System.Windows.Forms.TextBox PlusV;
+        private System.Windows.Forms.TextBox PlugX;
+        private System.Windows.Forms.TextBox PlugW;
+        private System.Windows.Forms.TextBox PlugV;
         private System.Windows.Forms.TextBox PlugU;
-        private System.Windows.Forms.TextBox PlusZ;
-        private System.Windows.Forms.TextBox PlusY;
+        private System.Windows.Forms.TextBox PlugZ;
+        private System.Windows.Forms.TextBox PlugY;
         private System.Windows.Forms.Button Scramble;
     }
 }
