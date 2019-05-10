@@ -321,27 +321,158 @@ namespace EnigmaMachine
             //returns int array into for a switch statement
             return DecisionLayer;
 
-        }/*
-        private String outputLayer(int[] Orient,string input)
-        {
-
-
-
-
-            return 
         }
-        */
+        private String InLayer(int[] Orient,string input)
+        {
+            string inputEdit = input;
+            //First rotor
+            if(Orient[0] == 1)
+            {
+                inputEdit = Rotor1.InwardVal(inputEdit);
+            }
+          else  if (Orient[0] == 2)
+            {
+                inputEdit = Rotor2.InwardVal(inputEdit);
+            }
+           else if (Orient[0] == 3)
+            {
+                inputEdit = Rotor3.InwardVal(inputEdit);
+            }
+           else if (Orient[0] == 4)
+            {
+                inputEdit = Rotor4.InwardVal(inputEdit);
+            }
+           else if (Orient[0] == 5)
+            {
+                inputEdit = Rotor5.InwardVal(inputEdit);
+            }
+            //set2
+            if (Orient[1] == 1)
+            {
+                inputEdit = Rotor1.InwardVal(inputEdit);
+            }
+            else if (Orient[1] == 2)
+            {
+                inputEdit = Rotor2.InwardVal(inputEdit);
+            }
+            else if (Orient[1] == 3)
+            {
+                inputEdit = Rotor3.InwardVal(inputEdit);
+            }
+            else if (Orient[1] == 4)
+            {
+                inputEdit = Rotor4.InwardVal(inputEdit);
+            }
+            else if (Orient[1] == 5)
+            {
+                inputEdit = Rotor5.InwardVal(inputEdit);
+            }
+            //set3
+            if (Orient[2] == 1)
+            {
+                inputEdit = Rotor1.InwardVal(inputEdit);
+            }
+            else if (Orient[2] == 2)
+            {
+                inputEdit = Rotor2.InwardVal(inputEdit);
+            }
+            else if (Orient[2] == 3)
+            {
+                inputEdit = Rotor3.InwardVal(inputEdit);
+            }
+            else if (Orient[2] == 4)
+            {
+                inputEdit = Rotor4.InwardVal(inputEdit);
+            }
+            else if (Orient[2] == 5)
+            {
+                inputEdit = Rotor5.InwardVal(inputEdit);
+            }
+
+            return inputEdit;
+        }
+        private String OutLayer(int[] Orient,String Input)
+        {
+          String  inputEdit = Input;
+            if (Orient[0] == 1)
+            {
+                inputEdit = Rotor1.InwardVal(inputEdit);
+            }
+            else if (Orient[0] == 2)
+            {
+                inputEdit = Rotor2.InwardVal(inputEdit);
+            }
+            else if (Orient[0] == 3)
+            {
+                inputEdit = Rotor3.InwardVal(inputEdit);
+            }
+            else if (Orient[0] == 4)
+            {
+                inputEdit = Rotor4.InwardVal(inputEdit);
+            }
+            else if (Orient[0] == 5)
+            {
+                inputEdit = Rotor5.InwardVal(inputEdit);
+            }
+            //set2
+            if (Orient[1] == 1)
+            {
+                inputEdit = Rotor1.InwardVal(inputEdit);
+            }
+            else if (Orient[1] == 2)
+            {
+                inputEdit = Rotor2.InwardVal(inputEdit);
+            }
+            else if (Orient[1] == 3)
+            {
+                inputEdit = Rotor3.InwardVal(inputEdit);
+            }
+            else if (Orient[1] == 4)
+            {
+                inputEdit = Rotor4.InwardVal(inputEdit);
+            }
+            else if (Orient[1] == 5)
+            {
+                inputEdit = Rotor5.InwardVal(inputEdit);
+            }
+            //set3
+            if (Orient[2] == 1)
+            {
+                inputEdit = Rotor1.InwardVal(inputEdit);
+            }
+            else if (Orient[2] == 2)
+            {
+                inputEdit = Rotor2.InwardVal(inputEdit);
+            }
+            else if (Orient[2] == 3)
+            {
+                inputEdit = Rotor3.InwardVal(inputEdit);
+            }
+            else if (Orient[2] == 4)
+            {
+                inputEdit = Rotor4.InwardVal(inputEdit);
+            }
+            else if (Orient[2] == 5)
+            {
+                inputEdit = Rotor5.InwardVal(inputEdit);
+            }
+            return inputEdit;
+        }
 
 
 
         private void Scramble_Click(object sender, EventArgs e)
         {
             //CALLS ALL PROCESSUS WITH ACCORDING CONFIGURATIONS
-            int[] test;
+            
+            //Plugboard->Right->Center->left->left->center->->right->plugboard -> OUTPUT
+          Output.Text = PlugBoard(OutLayer(Orientation(),InLayer(Orientation(), PlugBoard(Input.Text))));
 
-            //outputLayer(Orientation(), PlugBoard(Input.Text));
-            test = Orientation();
-            Output.Text = test[0].ToString()+ test[1].ToString()+ test[2].ToString();
+
+
+
+          //  test = Orientation();
+            //Output.Text = test[0].ToString()+ test[1].ToString()+ test[2].ToString();
             //ROTOR TEST: Output.Text = Rotor3.InwardVal(Rotor2.InwardVal(Rotor3.InwardVal(PlugOutput))); 
 
 
