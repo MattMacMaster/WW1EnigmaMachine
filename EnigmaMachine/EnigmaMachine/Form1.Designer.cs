@@ -57,13 +57,13 @@
             this.label5 = new System.Windows.Forms.Label();
             this.LeftAdd = new System.Windows.Forms.Button();
             this.LeftMin = new System.Windows.Forms.Button();
-            this.LeftNotch = new System.Windows.Forms.TextBox();
+            this.RightNotch = new System.Windows.Forms.TextBox();
             this.CenterNotch = new System.Windows.Forms.TextBox();
             this.CenterMin = new System.Windows.Forms.Button();
             this.CenterAdd = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.RightNotch = new System.Windows.Forms.TextBox();
+            this.LeftNotch = new System.Windows.Forms.TextBox();
             this.RightMin = new System.Windows.Forms.Button();
             this.RightAdd = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
@@ -390,7 +390,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(38, 158);
+            this.label4.Location = new System.Drawing.Point(284, 158);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(69, 13);
             this.label4.TabIndex = 10;
@@ -399,7 +399,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(28, 171);
+            this.label5.Location = new System.Drawing.Point(274, 171);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(92, 13);
             this.label5.TabIndex = 11;
@@ -408,7 +408,7 @@
             // LeftAdd
             // 
             this.LeftAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LeftAdd.Location = new System.Drawing.Point(31, 187);
+            this.LeftAdd.Location = new System.Drawing.Point(22, 187);
             this.LeftAdd.Name = "LeftAdd";
             this.LeftAdd.Size = new System.Drawing.Size(22, 30);
             this.LeftAdd.TabIndex = 12;
@@ -419,7 +419,7 @@
             // LeftMin
             // 
             this.LeftMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LeftMin.Location = new System.Drawing.Point(85, 187);
+            this.LeftMin.Location = new System.Drawing.Point(75, 187);
             this.LeftMin.Name = "LeftMin";
             this.LeftMin.Size = new System.Drawing.Size(22, 30);
             this.LeftMin.TabIndex = 13;
@@ -427,13 +427,13 @@
             this.LeftMin.UseVisualStyleBackColor = true;
             this.LeftMin.Click += new System.EventHandler(this.LeftMin_Click);
             // 
-            // LeftNotch
+            // RightNotch
             // 
-            this.LeftNotch.Location = new System.Drawing.Point(59, 194);
-            this.LeftNotch.Name = "LeftNotch";
-            this.LeftNotch.ReadOnly = true;
-            this.LeftNotch.Size = new System.Drawing.Size(19, 20);
-            this.LeftNotch.TabIndex = 14;
+            this.RightNotch.Location = new System.Drawing.Point(305, 194);
+            this.RightNotch.Name = "RightNotch";
+            this.RightNotch.ReadOnly = true;
+            this.RightNotch.Size = new System.Drawing.Size(19, 20);
+            this.RightNotch.TabIndex = 14;
             // 
             // CenterNotch
             // 
@@ -470,9 +470,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(135, 171);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(124, 13);
+            this.label6.Size = new System.Drawing.Size(131, 13);
             this.label6.TabIndex = 16;
-            this.label6.Text = "(Left rotations till rotation)";
+            this.label6.Text = "(Right rotations till rotation)";
             // 
             // label7
             // 
@@ -483,18 +483,18 @@
             this.label7.TabIndex = 15;
             this.label7.Text = "Notch Config";
             // 
-            // RightNotch
+            // LeftNotch
             // 
-            this.RightNotch.Location = new System.Drawing.Point(308, 194);
-            this.RightNotch.Name = "RightNotch";
-            this.RightNotch.ReadOnly = true;
-            this.RightNotch.Size = new System.Drawing.Size(19, 20);
-            this.RightNotch.TabIndex = 24;
+            this.LeftNotch.Location = new System.Drawing.Point(50, 194);
+            this.LeftNotch.Name = "LeftNotch";
+            this.LeftNotch.ReadOnly = true;
+            this.LeftNotch.Size = new System.Drawing.Size(19, 20);
+            this.LeftNotch.TabIndex = 24;
             // 
             // RightMin
             // 
             this.RightMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RightMin.Location = new System.Drawing.Point(334, 187);
+            this.RightMin.Location = new System.Drawing.Point(330, 187);
             this.RightMin.Name = "RightMin";
             this.RightMin.Size = new System.Drawing.Size(22, 30);
             this.RightMin.TabIndex = 23;
@@ -505,7 +505,7 @@
             // RightAdd
             // 
             this.RightAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RightAdd.Location = new System.Drawing.Point(280, 187);
+            this.RightAdd.Location = new System.Drawing.Point(277, 187);
             this.RightAdd.Name = "RightAdd";
             this.RightAdd.Size = new System.Drawing.Size(22, 30);
             this.RightAdd.TabIndex = 22;
@@ -516,7 +516,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(260, 171);
+            this.label8.Location = new System.Drawing.Point(2, 171);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(136, 13);
             this.label8.TabIndex = 21;
@@ -525,7 +525,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(287, 158);
+            this.label9.Location = new System.Drawing.Point(29, 158);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(69, 13);
             this.label9.TabIndex = 20;
@@ -1025,7 +1025,7 @@
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.RightNotch);
+            this.Controls.Add(this.LeftNotch);
             this.Controls.Add(this.RightMin);
             this.Controls.Add(this.RightAdd);
             this.Controls.Add(this.label8);
@@ -1035,7 +1035,7 @@
             this.Controls.Add(this.CenterAdd);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.LeftNotch);
+            this.Controls.Add(this.RightNotch);
             this.Controls.Add(this.LeftMin);
             this.Controls.Add(this.LeftAdd);
             this.Controls.Add(this.label5);
@@ -1095,13 +1095,13 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button LeftAdd;
         private System.Windows.Forms.Button LeftMin;
-        private System.Windows.Forms.TextBox LeftNotch;
+        private System.Windows.Forms.TextBox RightNotch;
         private System.Windows.Forms.TextBox CenterNotch;
         private System.Windows.Forms.Button CenterMin;
         private System.Windows.Forms.Button CenterAdd;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox RightNotch;
+        private System.Windows.Forms.TextBox LeftNotch;
         private System.Windows.Forms.Button RightMin;
         private System.Windows.Forms.Button RightAdd;
         private System.Windows.Forms.Label label8;

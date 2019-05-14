@@ -36,6 +36,9 @@ namespace EnigmaMachine
             return OutputArray[match].ToString();
 
         }
+        
+
+
         //for testing rotors
         public int RotorLength()
         {
@@ -45,5 +48,23 @@ namespace EnigmaMachine
         {
             return InputArray[a] + "," + OutputArray[a];
         }
+        
+        public void Rotation()
+        {
+            string[] cross = this.OutputArray;
+            int a = 0;
+            int b = 1;
+            while (b < 26)
+            {
+                this.OutputArray[a] = cross[b];
+                a += 1;
+                b += 1;
+            
+                
+            }
+                this.OutputArray[0] = cross[25];
+            
+        }
+        
     }
 }

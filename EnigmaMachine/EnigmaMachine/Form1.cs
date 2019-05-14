@@ -16,6 +16,7 @@ namespace EnigmaMachine
         int LeftNotchVal = 0;
         int CenterNotchVal = 0;
         int RightNotchVal = 0;
+        int Counter = 0;
         // Rotar Decalrations
         //Rotor 1 is base default
         // new String[] Set1In = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
@@ -44,15 +45,16 @@ namespace EnigmaMachine
             new String[] { "W", "X", "Y", "Z", "A", "B", "C", "D", "S", "T", "U", "V", "P", "Q", "R", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O" }
             );
 
+        
 
         public Form1()
         {
             InitializeComponent();
            
             //On boot display no notches
-            LeftNotch.Text = Convert.ToString(LeftNotchVal);
+            RightNotch.Text = Convert.ToString(LeftNotchVal);
             CenterNotch.Text = Convert.ToString(CenterNotchVal);
-            RightNotch.Text = Convert.ToString(RightNotchVal);
+            LeftNotch.Text = Convert.ToString(RightNotchVal);
 
         }
 
@@ -70,8 +72,11 @@ namespace EnigmaMachine
         private void LeftAdd_Click(object sender, EventArgs e)
         {
             //Creates a notch, notch location on value once scramble is hit ONLY ALLOWS ONE NOTCH
-            LeftNotchVal += 1;
-            LeftNotch.Text = Convert.ToString(LeftNotchVal);
+            if (LeftNotchVal < 26)
+            {
+                LeftNotchVal += 1;
+                LeftNotch.Text = Convert.ToString(LeftNotchVal);
+            }
         }
 
         private void LeftMin_Click(object sender, EventArgs e)
@@ -88,8 +93,11 @@ namespace EnigmaMachine
 
         private void CenterAdd_Click(object sender, EventArgs e)
         {
-            CenterNotchVal += 1;
-            CenterNotch.Text = Convert.ToString(CenterNotchVal);
+            if (CenterNotchVal < 26)
+            {
+                CenterNotchVal += 1;
+                CenterNotch.Text = Convert.ToString(CenterNotchVal);
+            }
         }
 
         private void CenterMin_Click(object sender, EventArgs e)
@@ -104,9 +112,12 @@ namespace EnigmaMachine
         }
 
         private void RightAdd_Click(object sender, EventArgs e)
-        {
-            RightNotchVal += 1;
-            RightNotch.Text = Convert.ToString(RightNotchVal);
+        {if (RightNotchVal < 26)
+            {
+                RightNotchVal += 1;
+                RightNotch.Text = Convert.ToString(RightNotchVal);
+            }
+       
         }
 
         private void RightMin_Click(object sender, EventArgs e)
@@ -126,9 +137,9 @@ namespace EnigmaMachine
              LeftNotchVal = 0;
              CenterNotchVal = 0;
              RightNotchVal = 0;
-            LeftNotch.Text = Convert.ToString(LeftNotchVal);
+            RightNotch.Text = Convert.ToString(LeftNotchVal);
             CenterNotch.Text = Convert.ToString(CenterNotchVal);
-            RightNotch.Text = Convert.ToString(RightNotchVal);
+            LeftNotch.Text = Convert.ToString(RightNotchVal);
             //End Notch Clearing
         }
         private string PlugBoard(String Input)
@@ -463,16 +474,25 @@ namespace EnigmaMachine
 
         private void Scramble_Click(object sender, EventArgs e)
         {
-            //CALLS ALL PROCESSUS WITH ACCORDING CONFIGURATIONS
-            
-            //Plugboard->Right->Center->left->left->center->->right->plugboard -> OUTPUT
-          Output.Text = PlugBoard(OutLayer(Orientation(),InLayer(Orientation(), PlugBoard(Input.Text))));
 
+            //CALLS ALL PROCESSUS WITH ACCORDING CONFIGURATIONS
+            // LeftNotchVal,RightNotchVal,centerNotchVal
+            
+            if(Counter == RightNotchVal)
+            {
+                Rotor1.Rotation();
+                Counter = 0;
+            }
+            Counter++;
+
+            //Plugboard->Right->Center->left->left->center->->right->plugboard -> OUTPUT
+              Output.Text = PlugBoard(OutLayer(Orientation(),InLayer(Orientation(), PlugBoard(Input.Text))));
+           // Output.Text = Counter.ToString();
 
 
 
           //  test = Orientation();
-            //Output.Text = test[0].ToString()+ test[1].ToString()+ test[2].ToString();
+            //Output.Text = Rotor1.RotorLet(25).ToString();
             //ROTOR TEST: Output.Text = Rotor3.InwardVal(Rotor2.InwardVal(Rotor3.InwardVal(PlugOutput))); 
 
 
