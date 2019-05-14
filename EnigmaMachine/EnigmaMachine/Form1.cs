@@ -335,7 +335,8 @@ namespace EnigmaMachine
         }
         private String InLayer(int[] Orient,string input)
         {
-            string inputEdit = input;
+            string inputEdit = "";
+            inputEdit = input;
             //First rotor
             if(Orient[0] == 1)
             {
@@ -404,70 +405,70 @@ namespace EnigmaMachine
         }
         private String OutLayer(int[] Orient,String Input)
         {
-          String  inputEdit = Input;
+          String  OutEdit = Input;
             if (Orient[0] == 1)
             {
-                inputEdit = Rotor1.InwardVal(inputEdit);
+                OutEdit = Rotor1.InwardVal(OutEdit);
             }
             else if (Orient[0] == 2)
             {
-                inputEdit = Rotor2.InwardVal(inputEdit);
+                OutEdit = Rotor2.InwardVal(OutEdit);
             }
             else if (Orient[0] == 3)
             {
-                inputEdit = Rotor3.InwardVal(inputEdit);
+                OutEdit = Rotor3.InwardVal(OutEdit);
             }
             else if (Orient[0] == 4)
             {
-                inputEdit = Rotor4.InwardVal(inputEdit);
+                OutEdit = Rotor4.InwardVal(OutEdit);
             }
             else if (Orient[0] == 5)
             {
-                inputEdit = Rotor5.InwardVal(inputEdit);
+                OutEdit = Rotor5.InwardVal(OutEdit);
             }
             //set2
             if (Orient[1] == 1)
             {
-                inputEdit = Rotor1.InwardVal(inputEdit);
+                OutEdit = Rotor1.InwardVal(OutEdit);
             }
             else if (Orient[1] == 2)
             {
-                inputEdit = Rotor2.InwardVal(inputEdit);
+                OutEdit = Rotor2.InwardVal(OutEdit);
             }
             else if (Orient[1] == 3)
             {
-                inputEdit = Rotor3.InwardVal(inputEdit);
+                OutEdit = Rotor3.InwardVal(OutEdit);
             }
             else if (Orient[1] == 4)
             {
-                inputEdit = Rotor4.InwardVal(inputEdit);
+                OutEdit = Rotor4.InwardVal(OutEdit);
             }
             else if (Orient[1] == 5)
             {
-                inputEdit = Rotor5.InwardVal(inputEdit);
+                OutEdit = Rotor5.InwardVal(OutEdit);
             }
             //set3
             if (Orient[2] == 1)
             {
-                inputEdit = Rotor1.InwardVal(inputEdit);
+                OutEdit = Rotor1.InwardVal(OutEdit);
             }
             else if (Orient[2] == 2)
             {
-                inputEdit = Rotor2.InwardVal(inputEdit);
+                OutEdit = Rotor2.InwardVal(OutEdit);
             }
             else if (Orient[2] == 3)
             {
-                inputEdit = Rotor3.InwardVal(inputEdit);
+                OutEdit = Rotor3.InwardVal(OutEdit);
             }
             else if (Orient[2] == 4)
             {
-                inputEdit = Rotor4.InwardVal(inputEdit);
+                OutEdit = Rotor4.InwardVal(OutEdit);
             }
             else if (Orient[2] == 5)
             {
-                inputEdit = Rotor5.InwardVal(inputEdit);
+                OutEdit = Rotor5.InwardVal(OutEdit);
             }
-            return inputEdit;
+            return OutEdit; //Actually Output
         }
 
 
@@ -477,21 +478,21 @@ namespace EnigmaMachine
 
             //CALLS ALL PROCESSUS WITH ACCORDING CONFIGURATIONS
             // LeftNotchVal,RightNotchVal,centerNotchVal
-            
-            if(Counter == RightNotchVal)
+            if (Counter == RightNotchVal)
             {
                 Rotor1.Rotation();
                 Counter = 0;
             }
             Counter++;
 
+
             //Plugboard->Right->Center->left->left->center->->right->plugboard -> OUTPUT
-              Output.Text = PlugBoard(OutLayer(Orientation(),InLayer(Orientation(), PlugBoard(Input.Text))));
-           // Output.Text = Counter.ToString();
+            Output.Text = PlugBoard(OutLayer(Orientation(),InLayer(Orientation(), PlugBoard(Input.Text))));
+            // Output.Text = Counter.ToString();
 
+            
 
-
-          //  test = Orientation();
+            //  test = Orientation();
             //Output.Text = Rotor1.RotorLet(25).ToString();
             //ROTOR TEST: Output.Text = Rotor3.InwardVal(Rotor2.InwardVal(Rotor3.InwardVal(PlugOutput))); 
 

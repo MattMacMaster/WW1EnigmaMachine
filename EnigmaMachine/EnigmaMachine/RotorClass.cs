@@ -52,18 +52,26 @@ namespace EnigmaMachine
         public void Rotation()
         {
             string[] cross = this.OutputArray;
-            int a = 0;
-            int b = 1;
-            while (b < 26)
+            string[] result = new string[26];
+            int a = 1;
+            int b = 0;
+            while (a < 26)
             {
-                this.OutputArray[a] = cross[b];
-                a += 1;
-                b += 1;
+                result[a] = cross[b];
+                a++;
+                b++;
             
                 
             }
-                this.OutputArray[0] = cross[25];
-            
+                
+            result[0] = cross[25];
+            setArray(result);
+
+        }
+        public void setArray(string[] newArray)
+        {
+            OutputArray = newArray;
+
         }
         
     }
