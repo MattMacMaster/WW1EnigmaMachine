@@ -1,4 +1,5 @@
 # WW1EnigmaMachine
 #By:Matthew MacMaster 
 #Implenting Decryption this week
-#Implementing Large String functionality soon
+
+#Thinking about large string functionality,may just keep it as character only
