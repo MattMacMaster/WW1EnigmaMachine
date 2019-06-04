@@ -16,7 +16,9 @@ namespace EnigmaMachine
         int LeftNotchVal = 0;
         int CenterNotchVal = 0;
         int RightNotchVal = 0;
-        int Counter = 0;
+        int RightCounter = 0;
+        int CenterCounter = 0;
+        int LeftCounter = 0;
         // Rotar Decalrations
         //Rotor 1 is base default
         // new String[] Set1In = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
@@ -478,24 +480,44 @@ namespace EnigmaMachine
 
             //CALLS ALL PROCESSUS WITH ACCORDING CONFIGURATIONS
             // LeftNotchVal,RightNotchVal,centerNotchVal
-            if (Counter == RightNotchVal)
+
+            int[] Orient = Orientation();
+
+            if (RightCounter == RightNotchVal)
             {
-                Rotor1.Rotation();
-                Counter = 0;
+                if(Orient[0] == 1) { Rotor1.Rotation(); CenterCounter++; }
+                if (Orient[0] == 2) { Rotor2.Rotation(); CenterCounter++; }
+                if (Orient[0] == 3) { Rotor3.Rotation(); CenterCounter++; }
+                if (Orient[0] == 4) { Rotor4.Rotation(); CenterCounter++; }
+                if (Orient[0] == 5) { Rotor5.Rotation(); CenterCounter++; }
+                RightCounter = 0;
             }
-            Counter++;
+            RightCounter++;
 
+            if(CenterCounter == CenterNotchVal)
+            {
+                if (Orient[1] == 1) { Rotor1.Rotation(); LeftCounter++; }
+                if (Orient[1] == 2) { Rotor2.Rotation(); LeftCounter++; }
+                if (Orient[1] == 3) { Rotor3.Rotation(); LeftCounter++; }
+                if (Orient[1] == 4) { Rotor4.Rotation(); LeftCounter++; }
+                if (Orient[1] == 5) { Rotor5.Rotation(); LeftCounter++; }
+                CenterCounter = 0;
+            }
+            if (LeftCounter == LeftNotchVal)
+            {
+                if (Orient[3] == 1) { Rotor1.Rotation(); }
+                if (Orient[3] == 2) { Rotor2.Rotation(); }
+                if (Orient[3] == 3) { Rotor3.Rotation(); }
+                if (Orient[3] == 4) { Rotor4.Rotation(); }
+                if (Orient[3] == 5) { Rotor5.Rotation(); }
+                LeftCounter = 0;
 
-            //Plugboard->Right->Center->left->left->center->->right->plugboard -> OUTPUT
-            Output.Text = PlugBoard(OutLayer(Orientation(),InLayer(Orientation(), PlugBoard(Input.Text))));
+            }
+
+                //Plugboard->Right->Center->left->left->center->->right->plugboard -> OUTPUT
+                Output.Text = PlugBoard(OutLayer(Orientation(),InLayer(Orientation(), PlugBoard(Input.Text))));
             // Output.Text = Counter.ToString();
-
             
-
-            //  test = Orientation();
-            //Output.Text = Rotor1.RotorLet(25).ToString();
-            //ROTOR TEST: Output.Text = Rotor3.InwardVal(Rotor2.InwardVal(Rotor3.InwardVal(PlugOutput))); 
-
 
 
         }
@@ -503,11 +525,14 @@ namespace EnigmaMachine
         private void DecryptBtn_Click(object sender, EventArgs e)
         {
             //Reverse everything
+
+            //When it comes to notches the 
+
             //PlugBoard Inputed value returns static value
             //Goes Outlayer first then inlayer AS WELL AS having input array and outarray SWAPPED
             //Inverted Plugboard and then output ,TESTED THIS IDEA IS CORRECt
 
-
+            //Output.Text = 
         }
     }
 }
