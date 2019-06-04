@@ -122,6 +122,7 @@
             this.PlugZ = new System.Windows.Forms.TextBox();
             this.PlugY = new System.Windows.Forms.TextBox();
             this.Scramble = new System.Windows.Forms.Button();
+            this.DecryptBtn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -958,7 +959,7 @@
             // 
             // Scramble
             // 
-            this.Scramble.Location = new System.Drawing.Point(138, 386);
+            this.Scramble.Location = new System.Drawing.Point(158, 367);
             this.Scramble.Name = "Scramble";
             this.Scramble.Size = new System.Drawing.Size(75, 23);
             this.Scramble.TabIndex = 78;
@@ -966,11 +967,22 @@
             this.Scramble.UseVisualStyleBackColor = true;
             this.Scramble.Click += new System.EventHandler(this.Scramble_Click);
             // 
+            // DecryptBtn
+            // 
+            this.DecryptBtn.Location = new System.Drawing.Point(158, 415);
+            this.DecryptBtn.Name = "DecryptBtn";
+            this.DecryptBtn.Size = new System.Drawing.Size(75, 23);
+            this.DecryptBtn.TabIndex = 79;
+            this.DecryptBtn.Text = "Decrypt";
+            this.DecryptBtn.UseVisualStyleBackColor = true;
+            this.DecryptBtn.Click += new System.EventHandler(this.DecryptBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(393, 450);
+            this.Controls.Add(this.DecryptBtn);
             this.Controls.Add(this.Scramble);
             this.Controls.Add(this.PlugZ);
             this.Controls.Add(this.PlugY);
@@ -1160,6 +1172,7 @@
         private System.Windows.Forms.TextBox PlugZ;
         private System.Windows.Forms.TextBox PlugY;
         private System.Windows.Forms.Button Scramble;
+        private System.Windows.Forms.Button DecryptBtn;
     }
 }
 

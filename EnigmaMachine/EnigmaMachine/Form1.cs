@@ -499,5 +499,12 @@ namespace EnigmaMachine
 
 
         }
+
+        private void DecryptBtn_Click(object sender, EventArgs e)
+        {
+            //Reverse everything
+            //PlugBoard Inputed value returns static value
+            //
+        }
     }
 }
