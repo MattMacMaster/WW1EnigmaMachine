@@ -504,7 +504,10 @@ namespace EnigmaMachine
         {
             //Reverse everything
             //PlugBoard Inputed value returns static value
-            //
+            //Goes Outlayer first then inlayer AS WELL AS having input array and outarray SWAPPED
+            //Inverted Plugboard and then output ,TESTED THIS IDEA IS CORRECt
+
+
         }
     }
 }
