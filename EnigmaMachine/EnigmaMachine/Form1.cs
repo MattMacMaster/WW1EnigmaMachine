@@ -114,7 +114,7 @@ namespace EnigmaMachine
         }
 
         private void RightAdd_Click(object sender, EventArgs e)
-        {if (RightNotchVal < 26)
+        {if (RightNotchVal < 26 )
             {
                 RightNotchVal += 1;
                 RightNotch.Text = Convert.ToString(RightNotchVal);
@@ -483,39 +483,54 @@ namespace EnigmaMachine
 
             int[] Orient = Orientation();
 
-            if (RightCounter == RightNotchVal)
-            {
-                if(Orient[0] == 1) { Rotor1.Rotation(); CenterCounter++; }
-                if (Orient[0] == 2) { Rotor2.Rotation(); CenterCounter++; }
-                if (Orient[0] == 3) { Rotor3.Rotation(); CenterCounter++; }
-                if (Orient[0] == 4) { Rotor4.Rotation(); CenterCounter++; }
-                if (Orient[0] == 5) { Rotor5.Rotation(); CenterCounter++; }
-                RightCounter = 0;
-            }
-            RightCounter++;
-
-            if(CenterCounter == CenterNotchVal)
-            {
-                if (Orient[1] == 1) { Rotor1.Rotation(); LeftCounter++; }
-                if (Orient[1] == 2) { Rotor2.Rotation(); LeftCounter++; }
-                if (Orient[1] == 3) { Rotor3.Rotation(); LeftCounter++; }
-                if (Orient[1] == 4) { Rotor4.Rotation(); LeftCounter++; }
-                if (Orient[1] == 5) { Rotor5.Rotation(); LeftCounter++; }
-                CenterCounter = 0;
-            }
-            if (LeftCounter == LeftNotchVal)
-            {
-                if (Orient[3] == 1) { Rotor1.Rotation(); }
-                if (Orient[3] == 2) { Rotor2.Rotation(); }
-                if (Orient[3] == 3) { Rotor3.Rotation(); }
-                if (Orient[3] == 4) { Rotor4.Rotation(); }
-                if (Orient[3] == 5) { Rotor5.Rotation(); }
-                LeftCounter = 0;
-
-            }
-
+          
+                string fullString = "";
+                string test = "";
                 //Plugboard->Right->Center->left->left->center->->right->plugboard -> OUTPUT
-                Output.Text = PlugBoard(OutLayer(Orientation(),InLayer(Orientation(), PlugBoard(Input.Text))));
+                foreach(char c in Input.Text)
+            {
+                test = test + c;
+                
+
+                fullString = String.Concat(fullString,PlugBoard(OutLayer(Orientation(), InLayer(Orientation(), PlugBoard(c.ToString())))));
+                if (RightCounter == RightNotchVal && RightNotchVal != 0)
+                {
+                    if (Orient[0] == 1) { Rotor1.Rotation(); CenterCounter++; }
+                    if (Orient[0] == 2) { Rotor2.Rotation(); CenterCounter++; }
+                    if (Orient[0] == 3) { Rotor3.Rotation(); CenterCounter++; }
+                    if (Orient[0] == 4) { Rotor4.Rotation(); CenterCounter++; }
+                    if (Orient[0] == 5) { Rotor5.Rotation(); CenterCounter++; }
+                    RightCounter = 0;
+                }
+                RightCounter++;
+
+                if (CenterCounter == CenterNotchVal && CenterNotchVal != 0)
+                {
+                    if (Orient[1] == 1) { Rotor1.Rotation(); LeftCounter++; }
+                    if (Orient[1] == 2) { Rotor2.Rotation(); LeftCounter++; }
+                    if (Orient[1] == 3) { Rotor3.Rotation(); LeftCounter++; }
+                    if (Orient[1] == 4) { Rotor4.Rotation(); LeftCounter++; }
+                    if (Orient[1] == 5) { Rotor5.Rotation(); LeftCounter++; }
+                    CenterCounter = 0;
+                }
+                if (LeftCounter == LeftNotchVal && LeftNotchVal != 0)
+                {
+                    if (Orient[2] == 1) { Rotor1.Rotation(); }
+                    if (Orient[2] == 2) { Rotor2.Rotation(); }
+                    if (Orient[2] == 3) { Rotor3.Rotation(); }
+                    if (Orient[2] == 4) { Rotor4.Rotation(); }
+                    if (Orient[2] == 5) { Rotor5.Rotation(); }
+                    LeftCounter = 0;
+
+                }
+
+
+
+
+
+            }
+            Test.Text = test;
+            Output.Text = fullString;
             // Output.Text = Counter.ToString();
             
 
@@ -533,6 +548,11 @@ namespace EnigmaMachine
             //Inverted Plugboard and then output ,TESTED THIS IDEA IS CORRECt
 
             //Output.Text = 
+        }
+
+        private void Input_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
